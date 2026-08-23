@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/a.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="app">
+    <table>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>标题</th>
+                <th>歌手</th>
+                <th>时长</th>
+                <th>播放</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(item,index) in emplist" :key="item.id">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td><a v-bind:href="item.baike" target="_blank">{{item.songer}}</a></td>
+                <td>{{item.time}}</td>
+                <td><audio :src="'audios/'+item.title+'.mp3'" controls></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+        //import {createApp} from "js/vue.js";
+        createApp({
+            data(){
+                return {
+                    emplist:[
+                        {
+                            id:1,
+                            title:"唐人",
+                            songer:"覃沐曦",
+                            time:"03:44",
+                            baike:"https://baike.baidu.com/item/%E8%A6%83%E6%B2%90%E6%9B%A6/2582347?fr=aladdin"
+                        },
+                        {
+                            id:2,
+                            title:"漂洋过海来看你",
+                            songer:"周深",
+                            time:"03:03",
+                            baike:"https://baike.baidu.com/item/%E5%91%A8%E6%B7%B1/15089196?fr=aladdin"
+                        },
+                        {
+                            id:3,
+                            title:"小幸运",
+                            songer:"田馥甄",
+                            time:"04:17",
+                            baike:"https://baike.baidu.com/item/%E7%94%B0%E9%A6%A5%E7%94%84?fromModule=lemma_search-box"
+                        },
+                        {
+                            id:4,
+                            title:"Excitant",
+                            songer:"成驰洋",
+                            time:"03:30",
+                            baike:"https://baike.baidu.com/item/%E6%88%90%E9%A9%B0%E6%B4%8B?fromModule=lemma_search-box"
+                        },
+                    ]
+                }
+            },
+        }).mount("#app");
+    </script>
+</body>
+</html>

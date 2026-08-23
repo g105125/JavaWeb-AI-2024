@@ -1,0 +1,20 @@
+#title h1,#title p{
+    text-align: center;
+}
+video{
+    height:300px;
+}
+
+
+#main p{
+    text-indent:2em;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#main #foot{
+    text-align:right;
+    margin:auto auto auto 0;
+    text-indent:0em;
+}
+
