@@ -1,0 +1,13 @@
+# 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/java_web_hw_day6_04?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456gg
+
+# MyBatis配置
+mybatis:
+  configuration:
+    # 打印sql日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
