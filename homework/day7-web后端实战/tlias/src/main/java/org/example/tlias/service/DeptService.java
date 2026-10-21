@@ -1,7 +1,6 @@
-package org.example.web01.service;
+package org.example.tlias.service;
 
-import org.example.web01.pojo.Dept;
-import org.example.web01.pojo.Result;
+import org.example.tlias.pojo.Dept;
 
 import java.util.List;
 

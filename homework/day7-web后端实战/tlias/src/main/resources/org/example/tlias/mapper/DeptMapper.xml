@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace 必须对应Java Mapper接口全类名 -->
-<mapper namespace="org.example.web01.mapper.DeptMapper">
+<mapper namespace="org.example.tlias.mapper.DeptMapper">
     <insert id="insert">
         INSERT INTO dept(name,create_time,update_time) VALUES(#{name},#{createTime},#{updateTime})
     </insert>
@@ -11,10 +11,10 @@
         update dept set name=#{name},update_time=#{updateTime} where id=#{id}
     </update>
     <!-- 查询 -->
-    <select id="findAll" resultType="org.example.web01.pojo.Dept">
+    <select id="findAll" resultType="org.example.tlias.pojo.Dept">
         SELECT * FROM dept
     </select>
-    <select id="getById" resultType="org.example.web01.pojo.Dept">
+    <select id="getById" resultType="org.example.tlias.pojo.Dept">
         SELECT * FROM dept WHERE id=#{id}
     </select>
     <delete id="deleteById">

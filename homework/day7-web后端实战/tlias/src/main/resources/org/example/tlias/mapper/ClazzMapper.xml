@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 必须对应Java Mapper接口全类名 -->
+<mapper namespace="org.example.tlias.mapper.ClazzMapper">
+    <insert id="add">
+        INSERT INTO clazz(name, room, begin_date, end_date, master_id, subject, create_time, update_time) VALUES(#{name},#{room},#{beginDate},#{endDate},#{masterId},#{subject},#{createTime},#{updateTime})
+    </insert>
+</mapper>

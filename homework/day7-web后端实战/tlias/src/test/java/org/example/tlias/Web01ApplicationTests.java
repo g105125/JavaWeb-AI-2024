@@ -1,4 +1,4 @@
-package org.example.web01;
+package org.example.tlias;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

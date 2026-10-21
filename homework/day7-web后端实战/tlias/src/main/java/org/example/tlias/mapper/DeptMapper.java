@@ -1,8 +1,8 @@
-package org.example.web01.mapper;
+package org.example.tlias.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.example.web01.pojo.Dept;
+import org.example.tlias.pojo.Dept;
 
 import java.util.List;
 

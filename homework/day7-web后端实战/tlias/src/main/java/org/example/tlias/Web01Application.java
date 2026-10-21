@@ -1,4 +1,4 @@
-package org.example.web01;
+package org.example.tlias;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
