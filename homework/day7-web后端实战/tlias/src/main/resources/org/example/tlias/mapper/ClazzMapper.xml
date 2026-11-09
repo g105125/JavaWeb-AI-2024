@@ -7,4 +7,7 @@
     <insert id="add">
         INSERT INTO clazz(name, room, begin_date, end_date, master_id, subject, create_time, update_time) VALUES(#{name},#{room},#{beginDate},#{endDate},#{masterId},#{subject},#{createTime},#{updateTime})
     </insert>
+    <select id="list" resultType="org.example.tlias.pojo.Clazz">
+        SELECT * FROM clazz
+    </select>
 </mapper>

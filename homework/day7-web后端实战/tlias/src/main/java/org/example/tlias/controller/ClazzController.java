@@ -17,4 +17,8 @@ public class ClazzController {
         clazzservice.add(clazz);
         return Result.success();
     }
+    @GetMapping("/list")
+    public Result list(){
+        return Result.success(clazzservice.list());
+    }
 }

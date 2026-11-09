@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Clazz {
+    Integer id;
     String name;
     String room;
     LocalDate beginDate;
